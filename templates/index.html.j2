@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {# utilisation de variable magics ! #}
+    <h1> Site deploye par ansible {{ ansible_version.full }} new site de formation  </h1>
+    <h2>{{ ansible_facts.default_ipv4.gateway }}</h2>
+    <h2> serveur de l'inventaire {{ ansible_facts.default_ipv4.gateway }}</h2>
+</body>
+</html>
